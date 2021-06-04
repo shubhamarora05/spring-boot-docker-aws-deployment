@@ -15,9 +15,9 @@ A complete deployment flow of Simple Spring boot application using Docker and Je
     - Replace below code<br/>
   `ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock`
   <br/><br/>with<br/><br/>
-  `ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4245 -H unix:///var/run/docker.sock`
+  `ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock`
 - Restart docker<br>
-  `sudo systemctl daemon-reload`</n>
+  `sudo systemctl daemon-reload`<br>
    `sudo systemctl restart docker`
   
 #### 3. Configure and Run Build on Jenkins

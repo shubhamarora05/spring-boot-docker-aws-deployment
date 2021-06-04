@@ -2,11 +2,8 @@ pipeline {
     agent any
 
 	environment {
-	    PATH = "PATH-TO-DOCKER"
-	    registry = "DOCKER-HUB-REGISTRY" 
-        registryCredential = 'DOCKER-HUB-CREDENTIALS-ID' 
+        registryCredential = 'dockerhub' 
         dockerImage = ''
-        DOCKER_HOST = "DOCKER-HOST-IP"
 	}
 	
 	tools {
