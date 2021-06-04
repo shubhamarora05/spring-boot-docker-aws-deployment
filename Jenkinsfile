@@ -24,7 +24,6 @@ pipeline {
         stage("Install") {
             steps {
                 bat "mvn install -DskipTests"
-                bat "cd PATH-WHERE-JAR-FILE-IS-LOCATED"
             }
         }
         stage("Docker Image Build") {
